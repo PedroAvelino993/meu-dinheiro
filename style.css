@@ -1,0 +1,161 @@
+/* Reset simples: remove espaçamentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f4f6f8;
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+
+header {
+  background-color: #0b5e3b;
+  color: white;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+.subtitulo {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-top: 0.2rem;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+form h2 {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+input, select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #0b5e3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #084a2e;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.status {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.escondido {
+  display: none;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.card.melhor {
+  border-color: #0b5e3b;
+  background-color: #eafbf1;
+}
+
+.card.indisponivel {
+  opacity: 0.6;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.card .taxa {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.card .valor {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0b5e3b;
+}
+
+.card .rendimento {
+  font-size: 0.85rem;
+  color: #0b5e3b;
+  margin-bottom: 0.3rem;
+}
+
+.card .aviso {
+  font-size: 0.85rem;
+  color: #a35b00;
+  margin-bottom: 0.3rem;
+}
+
+.card .observacao {
+  font-size: 0.78rem;
+  color: #777;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.4;
+}

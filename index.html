@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onde Investir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b5e3b">
+  <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+
+  <header>
+    <h1>📈 Onde Investir</h1>
+    <p class="subtitulo">Simulador educativo de investimentos</p>
+  </header>
+
+  <main>
+    <form id="form-simulacao">
+      <h2>Simular</h2>
+
+      <label for="valor">Quanto você quer investir? (R$)</label>
+      <input type="number" id="valor" step="0.01" min="0.01" placeholder="Ex: 100.00" required>
+
+      <label for="prazo">Por quantos dias pode deixar sem usar?</label>
+      <input type="number" id="prazo" min="1" placeholder="Ex: 30, 180, 365..." required>
+      <small>Dica: 30 dias = 1 mês · 365 dias = 1 ano</small>
+
+      <button type="submit">Simular</button>
+    </form>
+
+    <p id="status-taxa" class="status">Buscando a taxa Selic atual no Banco Central...</p>
+
+    <section id="resultado" class="escondido">
+      <h2>Resultado da simulação</h2>
+      <div id="cards"></div>
+      <p class="disclaimer">
+        ⚠️ Isto é uma simulação educativa com taxas aproximadas e regras gerais de mercado.
+        Taxas reais variam por banco/corretora. Não é uma recomendação financeira personalizada.
+      </p>
+    </section>
+
+    <form id="form-projecao">
+      <h2>🎯 Quanto investir por mês</h2>
+
+      <label for="objetivo">Quanto você quer ter no final? (R$)</label>
+      <input type="number" id="objetivo" step="0.01" min="0.01" placeholder="Ex: 15000.00" required>
+
+      <label for="meses">Em quantos meses?</label>
+      <input type="number" id="meses" min="1" placeholder="Ex: 24" required>
+      <small>Dica: 24 meses = 2 anos</small>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <section id="resultado-projecao" class="escondido">
+      <h2>Quanto guardar por mês</h2>
+      <div id="cards-projecao"></div>
+      <p class="disclaimer">
+        ⚠️ Considera depósitos iguais todo mês e juros compostos. Taxas reais variam por banco/corretora.
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
